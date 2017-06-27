@@ -1,18 +1,35 @@
 {
   "name": "nowa-gui-plugins",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "ali-plugins": [
-    "@ali/visualengine-devtools",
-    "salt-tools",
-    "uxcore-tools"
-  ],
-  "common-plugins": [
-    "grunt-cli", "gulp", "eslint", "jsinspect"
+  "plugins": [
+    {
+      "name": "@ali/visualengine-devtools",
+      "type": "cli",
+      "origin": "ali",
+      "cli": "vdev"
+    },
+    {
+      "name": "@ali/nw-checkout",
+      "type": "ui",
+      "origin": "ali"
+    },
+    {
+      "name": "nowa-proxy",
+      "type": "cli",
+      "cli": "nowa",
+      "origin": "common"
+    },
+    {
+      "name": "nowa-eslint",
+      "type": "cli",
+      "cli": "nowa",
+      "origin": "common"
+    }
   ],
   "keywords": [],
   "author": "",
